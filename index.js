@@ -1,13 +1,24 @@
 let htmlElement = document.querySelector('html');
 let bodyElement = document.querySelector('body');
 
-document.getElementById("navburger").addEventListener("click", function(){
-  document.getElementById("navmenu").style.width = "100%";
+let navBurger = document.getElementById("navburger");
+let navMenu = document.getElementById("navmenu");
+let navClose = document.getElementById("navclose");
+let navLink = document.querySelectorAll(".navlink");
+
+navBurger.addEventListener("click", function(){
+  navMenu.style.width = "100%";
 });
 
-document.getElementById("navclose").addEventListener("click", function(){
-  document.getElementById("navmenu").style.width = "";
+navClose.addEventListener("click", function(){
+  navMenu.style.width = "";
 });
+
+  navLink.forEach(nav => {
+    nav.addEventListener('click', event => {
+      navClose.click();
+    })
+  });
 
 window.onscroll = function() {myFunction()};
 
