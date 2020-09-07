@@ -39,7 +39,7 @@ gsap.utils.toArray(".image-left-animate").forEach(image => {
       scrub: 0.8,
       toggleActions: "play pause none none",
     },
-    y: '1em', boxShadow: '0 -10px 1px #9b2c2c', ease: Sine.easeOut,
+    y: '1em', opacity: 1, boxShadow: '0 -10px 1px #9b2c2c', ease: Sine.easeOut,
   });
 });
 
@@ -53,19 +53,32 @@ gsap.utils.toArray(".image-right-animate").forEach(image => {
       // markers: true,
       toggleActions: "play pause reverse reset",
     },
-    y: '-1em', boxShadow: '0 10px 1px #9b2c2c', ease: Sine.easeOut
+    y: '-1em', opacity: 1, boxShadow: '0 10px 1px #9b2c2c', ease: Sine.easeOut
   });
 });
 
-gsap.fromTo("#menu",
-  { transform: 'translateX(-1000px)', opacity: 0 },
+gsap.to("#menu",
   {
     scrollTrigger: {
       trigger: "#menu",
-      start: "top 70%",
+      start: "30% 85%",
       end: "top 40%",
       scrub: 0.8,
       // markers: true,
       toggleActions: "play none none none",
-  }, transform: 'translateX(0)', opacity: 1, duration: 0.6, ease: Sine.easeOut }
+  }, y: '-3em', opacity: 1, ease: Sine.easeOut }
 );
+
+// old slide animation
+// gsap.fromTo("#menu",
+//   { transform: 'translateX(-1000px)', opacity: 0 },
+//   {
+//     scrollTrigger: {
+//       trigger: "#menu",
+//       start: "top 70%",
+//       end: "top 40%",
+//       scrub: 0.8,
+//       // markers: true,
+//       toggleActions: "play none none none",
+//   }, transform: 'translateX(0)', opacity: 1, duration: 0.6, ease: Sine.easeOut }
+// );

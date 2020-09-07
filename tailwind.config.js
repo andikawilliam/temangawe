@@ -15,8 +15,8 @@ module.exports = {
         '4/5screen': '80vh',
       },
       fontFamily: {
-        'oswald': ['Oswald', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
+        'kumbh-sans': ['Kumbh Sans', 'sans-serif'],
       },
     },
   },
