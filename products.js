@@ -14,13 +14,18 @@ var projectCards = new Vue({
       },
       { 
         id : 3, 
-        name : "Cafe Latte",
+        name : "Gawe Latte",
         price : "14k",
       },
       { 
         id : 4,
         name : "Americano",
         price : "8k",
+      },
+      { 
+        id : 5,
+        name : "Affogato",
+        price : "15k",
       },
     ]    
   }

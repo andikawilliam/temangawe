@@ -626,7 +626,7 @@ html {
   background: url('https://i.stack.imgur.com/otJN0.png') repeat-x bottom;
 }
 
-.hvr-grow-shadow {
+.nav-grow-shadow {
   display: inline-block;
   vertical-align: middle;
   transform: translateZ(0);
@@ -638,9 +638,9 @@ html {
   transition-property: text-shadow, transform;
 }
 
-.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+.nav-grow-shadow:hover, .nav-grow-shadow:focus, .nav-grow-shadow:active {
   text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 .mobile-sidebar {
@@ -674,7 +674,6 @@ html {
     width: auto;
     top: auto;
     right: auto;
-    text-align: center;
     align-items: center;
     padding-top: 0;
     background-color: transparent;
@@ -6208,12 +6207,12 @@ html {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.font-oswald {
-  font-family: Oswald, sans-serif;
-}
-
 .font-roboto {
   font-family: Roboto, sans-serif;
+}
+
+.font-kumbh-sans {
+  font-family: Kumbh Sans, sans-serif;
 }
 
 .font-hairline {
@@ -23892,12 +23891,12 @@ html {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .sm\:font-oswald {
-    font-family: Oswald, sans-serif;
-  }
-
   .sm\:font-roboto {
     font-family: Roboto, sans-serif;
+  }
+
+  .sm\:font-kumbh-sans {
+    font-family: Kumbh Sans, sans-serif;
   }
 
   .sm\:font-hairline {
@@ -41485,12 +41484,12 @@ html {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .md\:font-oswald {
-    font-family: Oswald, sans-serif;
-  }
-
   .md\:font-roboto {
     font-family: Roboto, sans-serif;
+  }
+
+  .md\:font-kumbh-sans {
+    font-family: Kumbh Sans, sans-serif;
   }
 
   .md\:font-hairline {
@@ -59078,12 +59077,12 @@ html {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .lg\:font-oswald {
-    font-family: Oswald, sans-serif;
-  }
-
   .lg\:font-roboto {
     font-family: Roboto, sans-serif;
+  }
+
+  .lg\:font-kumbh-sans {
+    font-family: Kumbh Sans, sans-serif;
   }
 
   .lg\:font-hairline {
@@ -76671,12 +76670,12 @@ html {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .xl\:font-oswald {
-    font-family: Oswald, sans-serif;
-  }
-
   .xl\:font-roboto {
     font-family: Roboto, sans-serif;
+  }
+
+  .xl\:font-kumbh-sans {
+    font-family: Kumbh Sans, sans-serif;
   }
 
   .xl\:font-hairline {
