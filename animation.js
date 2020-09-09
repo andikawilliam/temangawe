@@ -1,17 +1,28 @@
-
-let tween = gsap.to("#teman-gawe-cube", {
-  rotation: 360,
-  duration: 1,
-  ease: Sine.easeOut,
-});
-
-cube = document.querySelector('#teman-gawe-cube');
-cube.addEventListener("click", function(el) {
-  tween.restart();
-});
-
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.fromTo("#navcube", { 
+  transform: 'scale(0)', opacity: 0 }, { 
+    scrollTrigger: {
+      trigger: "#navcube",
+      start: "400 30%",
+      end: "500 top",
+      id: "nav-cube",
+      markers: true,
+      scrub: 0.5,
+    }, transform: 'scale(1)', opacity: 1, duration: 0.8,  ease: Sine.easeOut
+})
+
+gsap.fromTo("#navtemangawe", { 
+  x: '-48px', }, { 
+    scrollTrigger: {
+      trigger: "#navtemangawe",
+      start: "400 30%",
+      end: "500 top",
+      id: "nav-temangawe",
+      markers: true,
+      scrub: 0.5,
+    }, x:'0', duration: 0.8, ease: Sine.easeOut 
+})
 
 gsap.utils.toArray(".text-animate").forEach(text => {
   gsap.to(text, {
@@ -29,7 +40,7 @@ gsap.utils.toArray(".text-animate").forEach(text => {
 });
 
 
-gsap.utils.toArray(".image-left-animate").forEach(image => {
+gsap.utils.toArray(".image-fade-up").forEach(image => {
   gsap.to(image, {
     scrollTrigger: {
       trigger: image,
@@ -39,21 +50,7 @@ gsap.utils.toArray(".image-left-animate").forEach(image => {
       scrub: 0.8,
       toggleActions: "play pause none none",
     },
-    y: '1em', opacity: 1, boxShadow: '0 -10px 1px #9b2c2c', ease: Sine.easeOut,
-  });
-});
-
-gsap.utils.toArray(".image-right-animate").forEach(image => {
-  gsap.to(image, {
-    scrollTrigger: {
-      trigger: image,
-      start: "top 90%",
-      end: "top 70%",
-      scrub: 0.8,
-      // markers: true,
-      toggleActions: "play pause reverse reset",
-    },
-    y: '-1em', opacity: 1, boxShadow: '0 10px 1px #9b2c2c', ease: Sine.easeOut
+    y: '-1em', opacity: 1, ease: Sine.easeOut,
   });
 });
 

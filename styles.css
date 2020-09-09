@@ -626,6 +626,16 @@ html {
   background: url('https://i.stack.imgur.com/otJN0.png') repeat-x bottom;
 }
 
+.filter-white {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(108%) contrast(101%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg) brightness(108%) contrast(101%);
+}
+
+.filter-red {
+  -webkit-filter: invert(26%) sepia(8%) saturate(6238%) hue-rotate(319deg) brightness(98%) contrast(94%);
+          filter: invert(26%) sepia(8%) saturate(6238%) hue-rotate(319deg) brightness(98%) contrast(94%);
+}
+
 .nav-grow-shadow {
   display: inline-block;
   vertical-align: middle;
@@ -638,8 +648,10 @@ html {
   transition-property: text-shadow, transform;
 }
 
-.nav-grow-shadow:hover, .nav-grow-shadow:focus, .nav-grow-shadow:active {
-  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+/* */
+
+.nav-active {
+  text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
   transform: scale(1.3);
 }
 
