@@ -3,11 +3,11 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.fromTo("#navcube", { 
   transform: 'scale(0)', opacity: 0 }, { 
     scrollTrigger: {
-      trigger: "#navcube",
-      start: "400 30%",
-      end: "500 top",
+      trigger: "#home",
+      start: "center 30%",
+      end: "80% 10%",
       id: "nav-cube",
-      markers: true,
+      // markers: true,
       scrub: 0.5,
     }, transform: 'scale(1)', opacity: 1, duration: 0.8,  ease: Sine.easeOut
 })
@@ -15,11 +15,11 @@ gsap.fromTo("#navcube", {
 gsap.fromTo("#navtemangawe", { 
   x: '-48px', }, { 
     scrollTrigger: {
-      trigger: "#navtemangawe",
-      start: "400 30%",
-      end: "500 top",
+      trigger: "#home",
+      start: "center 30%",
+      end: "80% 10%",
       id: "nav-temangawe",
-      markers: true,
+      // markers: true,
       scrub: 0.5,
     }, x:'0', duration: 0.8, ease: Sine.easeOut 
 })

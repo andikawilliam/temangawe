@@ -18,12 +18,17 @@ var projectCards = new Vue({
         price : "14k",
       },
       { 
-        id : 4,
+        id : 4, 
+        name : "Cappucino",
+        price : "14k",
+      },
+      { 
+        id : 5,
         name : "Americano",
         price : "8k",
       },
       { 
-        id : 5,
+        id : 6,
         name : "Affogato",
         price : "15k",
       },
