@@ -2,6 +2,9 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      backgroundPosition: {
+        'right-cup': '57% 100%',
+      },
       colors: {
         'red-teman': '#8A3630',
         'black-gawe': '#3E3131',

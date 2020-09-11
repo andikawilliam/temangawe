@@ -3681,6 +3681,10 @@ html {
   background-position: top;
 }
 
+.bg-right-cup {
+  background-position: 57% 100%;
+}
+
 .bg-repeat {
   background-repeat: repeat;
 }
@@ -21365,6 +21369,10 @@ html {
     background-position: top;
   }
 
+  .sm\:bg-right-cup {
+    background-position: 57% 100%;
+  }
+
   .sm\:bg-repeat {
     background-repeat: repeat;
   }
@@ -38956,6 +38964,10 @@ html {
 
   .md\:bg-top {
     background-position: top;
+  }
+
+  .md\:bg-right-cup {
+    background-position: 57% 100%;
   }
 
   .md\:bg-repeat {
@@ -56551,6 +56563,10 @@ html {
     background-position: top;
   }
 
+  .lg\:bg-right-cup {
+    background-position: 57% 100%;
+  }
+
   .lg\:bg-repeat {
     background-repeat: repeat;
   }
@@ -74142,6 +74158,10 @@ html {
 
   .xl\:bg-top {
     background-position: top;
+  }
+
+  .xl\:bg-right-cup {
+    background-position: 57% 100%;
   }
 
   .xl\:bg-repeat {
