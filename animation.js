@@ -35,22 +35,22 @@ gsap.utils.toArray(".text-animate").forEach(text => {
       scrub: 0.5,
       toggleActions: "play none none none",
     },
-    y: '-2em', opacity: 1, duration: 0.8,
+    yPercent: '-10', opacity: 1, duration: 0.8,
   });
 });
 
 
 gsap.utils.toArray(".image-fade-up").forEach(image => {
-  gsap.to(image, {
+  gsap.fromTo(image, { opacity: 0 }, {
     scrollTrigger: {
       trigger: image,
       start: "top 80%",
       end: "top 60%",
       // markers: true,
-      scrub: 0.8,
+      scrub: 1,
       toggleActions: "play pause none none",
     },
-    y: '-1em', opacity: 1, ease: Sine.easeOut,
+    yPercent: '-10', opacity: 1, ease: Sine.easeOut,
   });
 });
 
@@ -60,22 +60,8 @@ gsap.to("#menu",
       trigger: "#menu",
       start: "30% 85%",
       end: "top 40%",
-      scrub: 0.8,
+      scrub: 1,
       // markers: true,
       toggleActions: "play none none none",
-  }, y: '-3em', opacity: 1, ease: Sine.easeOut }
+  }, yPercent: '-10', opacity: 1, ease: Sine.easeOut }
 );
-
-// old slide animation
-// gsap.fromTo("#menu",
-//   { transform: 'translateX(-1000px)', opacity: 0 },
-//   {
-//     scrollTrigger: {
-//       trigger: "#menu",
-//       start: "top 70%",
-//       end: "top 40%",
-//       scrub: 0.8,
-//       // markers: true,
-//       toggleActions: "play none none none",
-//   }, transform: 'translateX(0)', opacity: 1, duration: 0.6, ease: Sine.easeOut }
-// );
