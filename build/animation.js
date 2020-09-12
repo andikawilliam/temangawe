@@ -1,7 +1,18 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.fromTo("#navcube", { 
-  transform: 'scale(0)', opacity: 0 }, { 
+// background animation, only works on desktop
+// gsap.fromTo("#home", { backgroundSize: "100% 120%" }, { 
+//     scrollTrigger: {
+//       trigger: "#home",
+//       start: "center 30%",
+//       end: "80% 10%",
+//       // markers: true,
+//       scrub: 0.5,
+//     }, 
+//     backgroundSize: "110% 130%"
+// })
+
+gsap.fromTo("#navcube", { transform: 'scale(0)', opacity: 0 }, { 
     scrollTrigger: {
       trigger: "#home",
       start: "center 30%",
@@ -12,8 +23,7 @@ gsap.fromTo("#navcube", {
     }, transform: 'scale(1)', opacity: 1, duration: 0.8,  ease: Sine.easeOut
 })
 
-gsap.fromTo("#navtemangawe", { 
-  x: '-48px', }, { 
+gsap.fromTo("#navtemangawe", { x: '-48px', }, { 
     scrollTrigger: {
       trigger: "#home",
       start: "center 30%",
