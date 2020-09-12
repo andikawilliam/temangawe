@@ -6,7 +6,7 @@ module.exports = {
         'right-cup': '57% 100%',
       },
       colors: {
-        'red-teman': '#8A3630',
+        'red-teman': '#a42828',
         'black-gawe': '#3E3131',
       },
       height: {
