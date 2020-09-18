@@ -1,5 +1,12 @@
 module.exports = {
-  purge: [],
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
+  purge: {
+    enabled: true,
+    content: ['./build/*.html',],
+  },
   theme: {
     extend: {
       backgroundPosition: {
