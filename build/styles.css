@@ -789,6 +789,10 @@ html {
   height: 2rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -813,8 +817,8 @@ html {
   font-size: 1.25rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
+.text-5vh {
+  font-size: 5vh;
 }
 
 .leading-relaxed {
@@ -921,6 +925,11 @@ html {
   padding-right: 1rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1019,8 +1028,8 @@ html {
   letter-spacing: 0.05em;
 }
 
-.tracking-widest {
-  letter-spacing: 0.1em;
+.whitespace-no-wrap {
+  white-space: nowrap;
 }
 
 .w-0 {
@@ -1035,8 +1044,8 @@ html {
   width: 2rem;
 }
 
-.w-48 {
-  width: 12rem;
+.w-40 {
+  width: 10rem;
 }
 
 .w-2\/3 {
@@ -1162,12 +1171,20 @@ html {
     height: 10rem;
   }
 
+  .sm\:text-base {
+    font-size: 1rem;
+  }
+
   .sm\:text-lg {
     font-size: 1.125rem;
   }
 
   .sm\:text-xl {
     font-size: 1.25rem;
+  }
+
+  .sm\:text-6vh {
+    font-size: 6vh;
   }
 
   .sm\:ml-16 {
@@ -1177,6 +1194,11 @@ html {
   .sm\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .sm\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .sm\:w-1\/4 {
@@ -1217,10 +1239,6 @@ html {
     font-size: 0.875rem;
   }
 
-  .md\:text-base {
-    font-size: 1rem;
-  }
-
   .md\:text-lg {
     font-size: 1.125rem;
   }
@@ -1237,8 +1255,8 @@ html {
     font-size: 2.25rem;
   }
 
-  .md\:text-6xl {
-    font-size: 4rem;
+  .md\:text-6vh {
+    font-size: 6vh;
   }
 
   .md\:mx-0 {
@@ -1308,11 +1326,6 @@ html {
     padding-right: 5rem;
   }
 
-  .md\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
   .md\:py-56 {
     padding-top: 14rem;
     padding-bottom: 14rem;
@@ -1356,10 +1369,6 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .lg\:bg-right-top {
-    background-position: right top;
-  }
-
   .lg\:inline-block {
     display: inline-block;
   }
@@ -1419,9 +1428,13 @@ html {
     padding-right: 3rem;
   }
 
-  .lg\:py-40 {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+  .lg\:py-56 {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+  }
+
+  .lg\:pr-64 {
+    padding-right: 16rem;
   }
 
   .lg\:w-1\/4 {
@@ -1438,4 +1451,7 @@ html {
 }
 
 @media (min-width: 1280px) {
+  .xl\:text-6xl {
+    font-size: 4rem;
+  }
 }

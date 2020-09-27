@@ -9,6 +9,15 @@ module.exports = {
   },
   theme: {
     extend: {
+      fontSize: {
+        '3vh' : '3vh',
+        '4vh' : '4vh',
+        '4.5vh' : '4.5vh',
+        '5vh' : '5vh',
+        '6vh' : '6vh',
+        '7vh' : '7vh',
+        '8vh' : '8vh',
+      },
       backgroundPosition: {
         'right-cup': '57% 100%',
       },
